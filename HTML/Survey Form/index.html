@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi a doloribus
+      praesentium sapiente id omnis repellendus delectus molestiae, neque saepe
+      enim expedita numquam hic consequuntur explicabo eveniet dolorem, illum
+      voluptas?
+    </p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="john" />
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="example@email.com" />
+      <label for="number" id="number-label">Age (optional):</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="100"
+        placeholder="20"
+      />
+      <select name="" id="dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <label for="yes-option">Yes</label>
+      <input type="radio" name="hotel-stay" id="yes-option" />
+      <label for="no-option">No</label>
+      <input type="radio" name="hotel-stay" id="no-option" />
+      <input type="checkbox" name="yes" id="yes-c" value="yes" />
+      <input type="checkbox" name="no" id="no-c" value="no" />
+      <textarea name="comments" id="comments"></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
