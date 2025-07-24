@@ -1,0 +1,81 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Background gradient based on row class using attribute selectors */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #e0ffe0, #ccffcc);
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fffbe0, #fff0b3);
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #e0f0ff, #cce0ff);
+}
+
+/* Display span elements inline-block */
+span {
+  display: inline-block;
+}
+
+/* Status styles by row class using descendant attribute selectors */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #ff9800;
+  background-image: linear-gradient(to right, #ffe0b2, #ffcc80);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #4caf50;
+  background-image: linear-gradient(to right, #a5d6a7, #81c784);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #2196f3;
+  background-image: linear-gradient(to right, #90caf9, #64b5f6);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Span with class status or starting with rate */
+span[class="status"],
+span[class^="rate"] {
+  height: 24px;
+  width: auto;
+  padding: 4px;
+}
+
+/* Empty spans inside rate */
+span[class^="rate"] > span {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #eee;
+  display: inline-block;
+}
+
+/* Rating gradients */
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to right, #f44336, #e57373);
+}
+
+span[class~="two"] > span:nth-child(-n + 2) {
+  background-image: linear-gradient(to right, #ff9800, #ffb74d);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, #4caf50, #81c784);
+}
