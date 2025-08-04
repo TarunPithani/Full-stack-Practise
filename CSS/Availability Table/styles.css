@@ -1,0 +1,77 @@
+:root {
+  --color0: #f8d7da;
+  --color1: #f5c6cb;
+  --color2: #f1b0b7;
+  --color3: #ec9fa3;
+  --color4: #e68e8f;
+  --color5: #e07d7b;
+
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+/* Table basics */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header cells */
+th {
+  background-color: #ddd;
+  padding: 8px;
+}
+
+/* Time column */
+.time {
+  text-align: left;
+}
+
+/* Background colors for availability */
+.available-0 {
+  background-color: var(--color0);
+}
+.available-1 {
+  background-color: var(--color1);
+}
+.available-2 {
+  background-color: var(--color2);
+}
+.available-3 {
+  background-color: var(--color3);
+}
+.available-4 {
+  background-color: var(--color4);
+}
+.available-5 {
+  background-color: var(--color5);
+}
+
+/* Border styling based on row class */
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+/* Legend */
+#legend {
+  margin-top: 20px;
+}
+
+#legend-gradient {
+  width: 100%;
+  height: 60%;
+  border: var(--solid-border);
+  background-image: linear-gradient(
+    90deg,
+    var(--color0) 0% 17%,
+    var(--color1) 17% 34%,
+    var(--color2) 34% 50%,
+    var(--color3) 50% 67%,
+    var(--color4) 67% 83%,
+    var(--color5) 83% 100%
+  );
+}
