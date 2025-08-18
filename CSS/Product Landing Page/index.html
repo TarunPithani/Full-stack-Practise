@@ -8,11 +8,62 @@
 
   <body>
     <header id="header">
-      <img src="" alt="" id="header-img" />
+      <img
+        src="https://via.placeholder.com/100x50"
+        alt="Logo"
+        id="header-img"
+      />
       <nav id="nav-bar">
-        <a href="" class="nav-link"></a><a href="" class="nav-link"></a
-        ><a href="" class="nav-link"></a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#video-section" class="nav-link">Video</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
       </nav>
     </header>
+
+    <main>
+      <section id="features">
+        <h2>Features</h2>
+        <p>
+          Our product is packed with amazing features that will help you
+          succeed.
+        </p>
+      </section>
+
+      <section id="video-section">
+        <h2>Watch Our Product in Action</h2>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Product video"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Choose the plan that’s right for you.</p>
+      </section>
+
+      <section id="signup">
+        <h2>Sign Up for Updates</h2>
+        <form
+          id="form"
+          action="https://www.freecodecamp.org/email-submit"
+          method="post"
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" id="submit" value="Get Started" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
